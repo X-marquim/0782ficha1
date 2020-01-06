@@ -7,7 +7,7 @@ int main() {
     printf("Consumo de eletricidade: ");
     scanf("%lf", &consumo);
 
-    final = (potencia + consumo) * precoKwh;
+    final = potencia + (consumo * precoKwh);
     printf("Valor a pagar com IVA = %lf euros", (final * iva) + final);
 
     return 0;
